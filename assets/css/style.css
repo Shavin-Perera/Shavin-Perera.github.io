@@ -1,0 +1,372 @@
+:root{
+  --navbar-background:white;
+  --heading-font:white;
+  --paragraph-font:white;
+  --main-color:#7851a9;
+  --heighlight-color:#4e0ead;
+    --contact-us-color:#5d3194d3;
+  --light-main:#d5c6ec;
+}
+
+body{
+  background-color: var(--main-color);
+}
+
+.bg-color{
+  background-color:var(--navbar-background) ;
+  background-color: var(--navbar-background);
+  border-bottom: 10px;
+}
+
+.navbar{
+  width: 100%;
+  border-bottom: 5px solid var(--heighlight-color);
+   
+}
+
+.nav-link{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 20px; /* Add right margin between links */
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+}
+
+.introduction-video{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-us-info{
+  text-align: left;
+  font-size: 20px;
+  padding-left: 10px;
+  color: var(--paragraph-font); 
+}
+
+.contact-us{
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: auto;
+  width: 100%;
+  height: 100%;
+  background-color: var(--heighlight-color);
+  color: var(--paragraph-font);
+}
+
+.welcome-heading{
+  padding-bottom: 20px;
+  text-align: center;
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+  color: var(--paragraph-font);
+  background-color:var(--light-main) ; 
+}
+
+.welcome-paragraph{
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  font-size: 20px;
+  color: var(--paragraph-font);
+  color: black; 
+}
+
+
+/* messeges */
+.messege-row{
+  
+}
+
+.founder-message-heading{
+  margin-top: 140px;
+  margin-bottom: 20px;
+  color: var(--heading-font);
+  text-align: center;
+}
+
+.messege-col{
+  border: 5px solid var(--heighlight-color);
+}
+
+.messege-col-r{
+
+  border-top: 5px solid var(--heighlight-color);
+  border-right: 5px solid var(--heighlight-color);
+  border-bottom: 5px solid var(--heighlight-color);
+}
+
+.messege-col-d{
+  border-right: 5px solid var(--heighlight-color);
+  border-bottom: 5px solid var(--heighlight-color);
+  width: 100%;
+}
+
+.messege-heading{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.messege-paragraph{
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 20px;
+  color: var(--paragraph-font);
+  color: black; 
+}
+
+.news-events{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  height: 100%;
+  color: var(--paragraph-font);
+}
+
+.our-vision{
+  text-align: center;
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+  color: var(--paragraph-font);
+}
+
+
+.carousel-inner {
+width: 40%;
+border-radius: 18px;
+border: 8px solid var(--heighlight-color);
+margin-bottom: 20px;
+touch-action: pan-y;
+}
+
+.message-padding{
+  margin-top: 125px;
+}
+
+/* cards */
+.card-custom .card-custom-image {
+  overflow: hidden;
+}
+.card-custom .card-custom-image img {
+  transition: all 0.4s ease;
+}
+
+.shadow-effect{
+  transition: all 0.5s;
+
+}
+
+.shadow-effect:hover{
+  box-shadow: 0 0 0 8px var(--color-body);
+
+}
+
+/* .carousel-inner:hover{
+  border: 8px solid var(--heighlight-color);
+  background-color: #d0baeb;
+  color: black;
+  margin-bottom: 20px;
+  touch-action: pan-y;
+  }
+   */
+  /* .news-events-text:hover{
+    color: black;
+    font-weight:bolder ;
+  } */
+  
+
+.news-events-text{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: var(--paragraph-font);
+}
+
+@media screen and (max-width: 1140px) {
+  .nav-link{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .carousel-inner {
+    width: 70%;
+    }
+    
+}
+.management-pics{
+  width: 150px;
+  height: auto;
+  border: 5px solid var(--heighlight-color);
+}
+
+.management-cols{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border: 5px solid var(--heighlight-color);
+}
+
+.contact-us-bg{
+  background-color: var(--contact-us-color);
+}
+
+@media screen and (max-width: 1140px) {
+  .welcome-paragraph{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--paragraph-font);
+    color: black; 
+  }
+    
+  .video-container {
+    position: relative;
+    width: 100%;
+    margin-top: 125px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  }
+}
+
+/* exessssssssssssss */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;1,600;1,700&display=swap');
+
+:root{
+    --color-body:#b6cbce;
+    --color-heading:#eef3db;
+    --color-base:#033f47;
+    --color-base2:#022a30;
+    --color-brand:#e0f780;
+    --color-brand2:#deff58;
+    --sidbar-width:240px;
+    --font-base:"Bai Jamjuree";
+    --profile-pic:170px;
+}
+body{
+    background-color: var(--color-base2);
+    color: var(--color-body);
+    font-family: var(--font-base),sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-body);
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: var(--color-brand);
+}
+image{
+    width: 100%;
+
+}
+img{
+    width: 100%;
+
+}
+
+
+
+
+/* Content- wrapper */
+#content-wrapper{
+    margin-left: var(--sidbar-width);
+}
+.full-height{
+    min-height:100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid white;
+    /* padding-left: var(--sidbar-width); */
+}
+
+.bg-base{
+    background-color: var(--color-base);
+}
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+.btn-brand{
+    background-color: var(--color-brand);
+}
+.btn-brand:hover,
+.btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+}
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+.link-custom::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+.link-custom:hover::after{
+    width: 100%;
+}
+
+.sub-topics{
+    margin-bottom: 50px;
+}
+
+.shadow-effect{
+    transition: all 0.5s;
+
+}
+
+.shadow-effect:hover{
+    box-shadow: 0 0 0 8px var(--color-body);
+
+}
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
