@@ -225,23 +225,6 @@ touch-action: pan-y;
   background-color: var(--contact-us-color);
 }
 
-@media screen and (max-width: 1140px) {
-  .welcome-paragraph{
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    font-size: 20px;
-    color: var(--paragraph-font);
-    color: black; 
-  }
-    
-  .video-container {
-    position: relative;
-    width: 100%;
-    margin-top: 125px;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
-  }
-}
 
 /* exessssssssssssss */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;1,600;1,700&display=swap');
@@ -303,9 +286,9 @@ img{
     /* padding-left: var(--sidbar-width); */
 }
 
-.bg-base{
+/* .bg-base{
     background-color: var(--color-base);
-}
+} */
 
 .btn{
     padding: 12px 28px;
@@ -369,4 +352,23 @@ img{
 
 .card-custom .card-custom-image img {
     transition: all 0.4s ease;
+}
+
+
+@media screen and (max-width: 1140px) {
+  .welcome-paragraph{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--paragraph-font);
+    color: black; 
+  }
+    
+  .video-container {
+    position: relative;
+    width: 100%;
+    margin-top: 125px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (9 / 16 * 100) */
+  }
 }
