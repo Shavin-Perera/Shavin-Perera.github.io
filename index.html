@@ -93,13 +93,15 @@
     <div class="row">
       <div class="col">
         <h1 class="heading-text">Welcome to ABC College</h1>
-        <p class="main-paragraph">Welcome to ABC College, a premier educational institution in Sri Lanka where our
+        <p id="myParagraph" class="main-paragraph">Welcome to ABC College, a premier educational institution in Sri Lanka where our
           priority is education. With state-of-the-art campuses and a dedicated team of educators, we strive to provide
           high-quality personalized teaching to our students. Our curriculum is meticulously designed to meet
           international standards and is benchmarked against renowned qualifications from the UK and Australia. At ABC
           College, we take pride in nurturing the potential of our students and equipping them with the knowledge and
           skills necessary to thrive in the global arena. Our unwavering commitment to excellence sets us apart,
           ensuring that our students receive a world-class education.</p>
+
+
       </div>
     </div>
   </div>
@@ -111,16 +113,17 @@
       </div>
       <div class="col-lg-6">
         <p>
-          Welcome to ABC College, a premier educational institution in Sri Lanka where our priority is education. With
-          state-of-the-art campuses and a dedicated team of educators, we strive to provide high-quality personalized
-          teaching to our students. Our curriculum is meticulously designed to meet international standards and is
-          benchmarked against renowned qualifications from the UK and Australia. At ABC College, we take pride in
-          nurturing the potential of our students and equipping them with the knowledge and skills necessary to thrive
-          in the global arena. Our unwavering commitment to excellence sets us apart, ensuring that our students receive
-          a world-class education.
+          Dive into the thrilling waves of our memorable swimming meet in 2022. Splashes of
+          determination and triumph filled the air as our talented swimmers showcased their skills, creating
+          unforgettable moments of teamwork, dedication, and competitive spirit
+    
         </p>
       </div>
     </div>
+  </div>
+  <!-- quotes -->
+  <div class="container-fluid">
+    <p class="iconbox-container  rounded-4 quotebox"  id="quote"></p>
   </div>
   <!-- Contact us -->
   <section id="contact-us">
@@ -170,6 +173,34 @@
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/aos.js"></script>
   <script src="assets/js/main.js"></script>
+  <script>
+    // quotes array
+    var quotes = [
+      "\"Education is the passport to the future, for tomorrow belongs to those who prepare for it today.\" \nMalcolm X",
+      "\"The more that you read, the more things you will know. The more that you learn, the more places you'll go.\" \nDr.Seuss",
+      "\"Education is the most powerful weapon which you can use to change the world.\"\nNelson Mandela",
+      "\"The beautiful thing about learning is that no one can take it away from you.\" \nB.B King",
+      "\"Education is not the filling of a pail, but the lighting of a fire.\"\nWilliam Butler Yeats"
+    ];
+  
+    // Function 
+    function displayQuote() {
+      var quoteElement = document.getElementById('quote');
+  
+      // Get a random quote from the quotes array
+      var randomIndex = Math.floor(Math.random() * quotes.length);
+      var randomQuote = quotes[randomIndex];
+  
+      // Set the quote text
+      quoteElement.innerText = randomQuote;
+    }
+  
+    // Call the displayQuote function initially
+    displayQuote();
+  
+    // Change quote every 30 seconds
+    setInterval(displayQuote, 30000);
+  </script>
 </body>
 
 </html>
